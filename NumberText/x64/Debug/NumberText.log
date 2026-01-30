@@ -1,0 +1,5 @@
+﻿  NumberText.cpp
+C:\Users\loaya\Desktop\pradvice\course11OOP\NumberText\NumToWords.h(24,20): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'NumberText.cpp')
+  
+  NumberText.vcxproj -> C:\Users\loaya\Desktop\pradvice\course11OOP\NumberText\x64\Debug\NumberText.exe
