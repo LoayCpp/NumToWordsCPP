@@ -93,19 +93,20 @@ public:
 
 	}
 	static string NumberToText(double Number)
-	{
-		int IntegarNumber = (int)Number;
-		double Decimal = Number - IntegarNumber;
+{
+	int IntegarNumber = (int)Number;
+	double Decimal = Number - IntegarNumber;
 
-		string WordOfNumber = to_string(Decimal);
-		WordOfNumber = DeleteZeroInTheEnd(WordOfNumber);
-
-
+	string WordOfNumber = to_string(Decimal);
+	
+	if (Decimal > 0) {
+	WordOfNumber = DeleteZeroInTheEnd(WordOfNumber);
 		return NumberToText(IntegarNumber) +
-			ColorText(" Point ", NumToWords::Green) +
+			ColorText(" Point ", clsUtil::Green) +
 			NumberToText(ConvertingDecimal(WordOfNumber));
-
 	}
+	return NumberToText(IntegarNumber);
+}
 	enum encolor { Red = 1, Green = 2, Yellow = 3, Blue = 4, Cyan = 5, BRed = 6, BGreen = 7, BYellow = 8, BBlue = 9, BCyan = 10 };
 	static string ColorText(string text, encolor color = encolor::Red) {
 #define RESET       "\033[0m"
