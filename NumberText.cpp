@@ -5,7 +5,7 @@
 using namespace std;
 int main()
 {
-	cout << NumToWords::NumberToText(1232.9382);
+	cout << NumToWords::NumberToText(1232);
 	system("pause>0");
 }
 

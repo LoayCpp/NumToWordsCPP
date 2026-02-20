@@ -102,7 +102,7 @@ public:
 	if (Decimal > 0) {
 	WordOfNumber = DeleteZeroInTheEnd(WordOfNumber);
 		return NumberToText(IntegarNumber) +
-			ColorText(" Point ", clsUtil::Green) +
+			ColorText(" Point ") +
 			NumberToText(ConvertingDecimal(WordOfNumber));
 	}
 	return NumberToText(IntegarNumber);
